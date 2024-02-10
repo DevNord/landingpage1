@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #1f1517;
+    background: #000;
     color: #fff;
 }
 
@@ -17,6 +17,7 @@ html{
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 ul{
@@ -26,7 +27,7 @@ ul{
 nav {
     max-width: 1120px;
     margin: auto;
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 2rem;
 
     display: flex;
     flex-direction: row;
@@ -41,13 +42,6 @@ nav {
     text-transform: uppercase;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    color: #fff2e7b0;
-}
-
 .github{
     color: #fff2e7;
     font-weight: 600;
@@ -59,7 +53,7 @@ main{
 }
 
 .principal{
-    background: #181012;
+    background: #2a2a2a;
 }
 
 .hero{
@@ -134,17 +128,9 @@ hr{
     transform: translate("0, -50%");
 }
 
-button{
-    border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
-
-    background-color: #a45a49;
-}
-
 .receitas{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
@@ -170,21 +156,31 @@ button{
     font-weight: 400;
 }
 
-.receitas-card-container{
-    padding: 0rem 10rem;
+.cards{
     display: flex;
+    column-count: 3;
+    column-gap: normal;
+    max-width: auto;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-card-container{
+    padding: 0rem 1rem;
+    display: flex;
+    max-width: 450px;
     flex-direction: row;
     flex-wrap: wrap;
 
 }
 
 .receitas-card{
-    background: #241a1c;
+    background: #2a2a2a;
     padding: 2rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     flex-basis: 29rem;
     margin-top: 2rem;
 }
@@ -212,15 +208,16 @@ button{
 .receita-avaliacao{
     color: #756a67;
     font-family: inter;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
+    padding: 0.5rem;
 }
 
 .receita-descricao{
     color: #c7bab3;
     font-family: inter;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .receita-autor{
@@ -248,7 +245,14 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    background: #23181a;
+    background: #2a2a2a;
+}
+
+.footer-copy{
+    color: #fff2e7;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .footer-copy{
